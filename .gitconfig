@@ -1,0 +1,5 @@
+[user]
+	name = Matt Diephouse
+	email = matt@diephouse.com
+[core]
+	excludesfile = ~/.dotfiles/.gitignore
