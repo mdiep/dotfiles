@@ -10,3 +10,5 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 autoload -U zmv
 alias "zmv"="noglob zmv -W"
 
+
+path=(~/bin $path $HOME/.cabal/bin $HOME/.local/bin)
