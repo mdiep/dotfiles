@@ -3,3 +3,5 @@
 	email = matt@diephouse.com
 [core]
 	excludesfile = ~/.dotfiles/.gitignore
+[push]
+	default = simple
