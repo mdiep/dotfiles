@@ -2,3 +2,6 @@
 .DS_Store
 *.pyc
 
+# Haskell's Stack http://haskellstack.org/
+.stack-work/
+
