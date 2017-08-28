@@ -1,5 +1,6 @@
 
 export PROMPT="%B%~ » %b"
+export PS2="» "
 export EDITOR=/usr/bin/vim
 
 # color `ls`
