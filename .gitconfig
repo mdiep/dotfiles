@@ -15,6 +15,12 @@
     prompt = false
 [diff]
     tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool]
+    prompt = false
+[merge]
+    tool = Kaleidoscope
 [url "https://github.com/"]
     insteadOf = git://github.com/
 [url "https://github.com/"]
