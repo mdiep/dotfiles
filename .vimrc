@@ -14,3 +14,6 @@ set shiftwidth=4    " indent by 4 columns
 " where insert mode started.
 set backspace=indent,eol,start
 
+colo slate " Choose a color scheme
+syntax on
+
