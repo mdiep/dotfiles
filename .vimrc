@@ -17,3 +17,5 @@ set backspace=indent,eol,start
 colo slate " Choose a color scheme
 syntax on
 
+set guifont=Operator\ Mono\ SSm:h11
+
