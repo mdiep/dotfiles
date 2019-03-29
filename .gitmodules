@@ -1,0 +1,3 @@
+[submodule ".vim/pack/swift/start/swift.vim"]
+	path = .vim/pack/swift/start/swift.vim
+	url = https://github.com/keith/swift.vim
