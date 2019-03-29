@@ -19,3 +19,7 @@ syntax on
 
 set guifont=Operator\ Mono\ SSm:h11
 
+" Keyboard shortcuts
+" Fuzzy Finder
+nnoremap <C-p> :<C-u>FZF<CR>
+
