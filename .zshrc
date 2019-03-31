@@ -19,3 +19,7 @@ alias "zmv"="noglob zmv -W"
 
 
 path=(~/bin $path $HOME/.cabal/bin $HOME/.local/bin)
+
+# Configure FZF (fuzzy finder) to generate the list of files with `ag`
+# This filters out ignored files and .git files. Manually exclude Carthage dependendies.
+export FZF_DEFAULT_COMMAND='ag -g . --ignore Carthage/Checkouts --ignore Carthage/Build'
