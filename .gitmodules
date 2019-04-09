@@ -4,3 +4,9 @@
 [submodule ".vim/pack/ui/start/fzf"]
 	path = .vim/pack/ui/start/fzf
 	url = https://github.com/junegunn/fzf
+[submodule ".vim/pack/kotlin/start/kotlin-vim"]
+	path = .vim/pack/kotlin/start/kotlin-vim
+	url = https://github.com/udalov/kotlin-vim
+[submodule ".vim/pack/ui/start/syntastic"]
+	path = .vim/pack/ui/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic
