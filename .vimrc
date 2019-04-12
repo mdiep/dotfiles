@@ -28,4 +28,4 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 " Show errors from all checkers
 let g:syntastic_aggregate_errors = 1
-let g:syntastic_swift_checkers = ['swiftlint', 'swiftpm']
+let g:syntastic_swift_checkers = ['swiftlint']
