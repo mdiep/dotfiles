@@ -10,3 +10,9 @@
 [submodule ".vim/pack/ui/start/syntastic"]
 	path = .vim/pack/ui/start/syntastic
 	url = https://github.com/vim-syntastic/syntastic
+[submodule ".vim/pack/js/start/vim-javascript"]
+	path = .vim/pack/javascript/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/pack/typescript/start/typescript-vim"]
+	path = .vim/pack/typescript/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
