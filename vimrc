@@ -20,6 +20,13 @@ set wildmode=full   " tab complete to the first full match
 " where insert mode started.
 set backspace=indent,eol,start
 
+augroup ColorOverrides
+  autocmd!
+  autocmd ColorScheme * highlight PreProc guifg=red guibg=grey15 ctermfg=red
+                    \ | highlight DiffAdd guifg=#009900
+                    \ | highlight DiffChange guifg=#bbbb00
+                    \ | highlight DiffDelete guifg=#ff2222
+augroup END
 colo slate " Choose a color scheme
 syntax on
 
