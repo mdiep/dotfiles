@@ -22,3 +22,6 @@
 [submodule "vim/pack/ui/start/lightline"]
 	path = vim/pack/ui/start/lightline
 	url = https://www.github.com/itchyny/lightline.vim
+[submodule "vim/pack/ui/start/illuminate"]
+	path = vim/pack/ui/start/illuminate
+	url = https://github.com/RRethy/vim-illuminate

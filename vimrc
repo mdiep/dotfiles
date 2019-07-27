@@ -35,6 +35,7 @@ augroup ColorOverrides
 augroup END
 colo slate " Choose a color scheme
 syntax on
+hi illuminatedWord guibg=grey25 " Set the highlight color for vim-illuminate
 
 set guifont=Operator\ Mono\ SSm:h11
 
