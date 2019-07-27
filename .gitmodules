@@ -19,3 +19,6 @@
 [submodule "vim/pack/ui/start/gitgutter"]
 	path = vim/pack/ui/start/gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/pack/ui/start/lightline"]
+	path = vim/pack/ui/start/lightline
+	url = https://www.github.com/itchyny/lightline.vim

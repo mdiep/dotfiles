@@ -2,7 +2,6 @@
 set incsearch   " search as you type
 
 set number " turn on line numbers
-set ruler  " always show the position at the bottom
 
 set autoindent
 set expandtab       " insert spaces instead of tabs
@@ -21,6 +20,11 @@ set wildmode=full   " tab complete to the first full match
 " allow backspace to delete indentation and newlines and delete past
 " where insert mode started.
 set backspace=indent,eol,start
+
+" configure the status line
+set noshowmode   " don't show the normal mode indicator
+set laststatus=2 " make room for lightline
+let g:lightline = { 'colorscheme': 'wombat' }
 
 augroup ColorOverrides
   autocmd!
