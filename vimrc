@@ -29,6 +29,8 @@ let g:lightline = { 'colorscheme': 'wombat' }
 augroup ColorOverrides
   autocmd!
   autocmd ColorScheme * highlight PreProc guifg=red guibg=grey15 ctermfg=red
+                    \ | highlight Normal guifg=grey90
+                    \ | highlight Comment guifg=grey50
                     \ | highlight DiffAdd guifg=#009900
                     \ | highlight DiffChange guifg=#bbbb00
                     \ | highlight DiffDelete guifg=#ff2222
