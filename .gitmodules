@@ -28,3 +28,6 @@
 [submodule "vim/pack/navigation/start/wordmotion"]
 	path = vim/pack/navigation/start/wordmotion
 	url = https://github.com/chaoren/vim-wordmotion
+[submodule "vim/pack/elm/start/elm-vim"]
+	path = vim/pack/elm/start/elm-vim
+	url = https://github.com/ElmCast/elm-vim
