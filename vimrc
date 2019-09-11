@@ -56,3 +56,6 @@ let g:syntastic_swift_checkers = ['swiftlint']
 
 " Don't track history in ~/.vim/.netrwhist
 let g:netrw_dirhistmax = 0
+
+" Don't override the normal navigation commands
+let g:wordmotion_prefix = '<Leader>'
