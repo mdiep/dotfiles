@@ -31,3 +31,6 @@
 [submodule "vim/pack/elm/start/elm-vim"]
 	path = vim/pack/elm/start/elm-vim
 	url = https://github.com/ElmCast/elm-vim
+[submodule "vim/pack/idris/start/idris-vim"]
+	path = vim/pack/idris/start/idris-vim
+	url = https://github.com/idris-hackers/idris-vim.git
