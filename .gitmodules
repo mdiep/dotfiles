@@ -34,3 +34,6 @@
 [submodule "vim/pack/idris/start/idris-vim"]
 	path = vim/pack/idris/start/idris-vim
 	url = https://github.com/idris-hackers/idris-vim.git
+[submodule "vim/pack/ui/start/coc.nvim"]
+	path = vim/pack/ui/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
