@@ -37,3 +37,6 @@
 [submodule "vim/pack/ui/start/coc.nvim"]
 	path = vim/pack/ui/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule "vim/pack/haskell/start/haskell-vim"]
+	path = vim/pack/haskell/start/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim
