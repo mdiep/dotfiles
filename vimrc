@@ -1,5 +1,7 @@
 
 set incsearch   " search as you type
+set ignorecase  " make search case-insensitive
+set smartcase   " ...unless you use an uppercase character
 
 set number " turn on line numbers
 
