@@ -28,16 +28,7 @@ set noshowmode   " don't show the normal mode indicator
 set laststatus=2 " make room for lightline
 let g:lightline = { 'colorscheme': 'wombat' }
 
-augroup ColorOverrides
-  autocmd!
-  autocmd ColorScheme * highlight PreProc guifg=red guibg=grey15 ctermfg=red
-                    \ | highlight Normal guifg=grey90
-                    \ | highlight Comment guifg=grey50
-                    \ | highlight DiffAdd guifg=#009900
-                    \ | highlight DiffChange guifg=#bbbb00
-                    \ | highlight DiffDelete guifg=#ff2222
-augroup END
-colo slate " Choose a color scheme
+colo mdiep " Choose a color scheme
 syntax on
 hi illuminatedWord guibg=grey25 " Set the highlight color for vim-illuminate
 
