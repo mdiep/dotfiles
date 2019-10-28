@@ -34,11 +34,13 @@ hi illuminatedWord guibg=grey25 " Set the highlight color for vim-illuminate
 
 set guifont=Operator\ Mono\ SSm:h11
 
+let mapleader = ","
+
 " Keyboard shortcuts
 " Fuzzy Finder
 nnoremap <C-p> :<C-u>FZF<CR>
-
-let mapleader = ","
+" Run!
+nnoremap <leader>r :make<CR>
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
