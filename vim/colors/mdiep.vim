@@ -12,6 +12,9 @@ let &t_ZR="\e[23m"
 
 highlight Normal guifg=grey90 ctermbg=234 guibg=#1e1e1e
 
+highlight Error ctermbg=NONE guibg=NONE ctermfg=196 guifg=red
+highlight! link ErrorMsg Error
+
 highlight Comment ctermfg=172 guifg=#ee8e23
 
 highlight Statement cterm=NONE gui=NONE ctermfg=69 guifg=#4b7ff1
