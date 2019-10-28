@@ -26,7 +26,7 @@ highlight PreProc ctermfg=246 guifg=#949494
 
 highlight Type cterm=italic gui=italic ctermfg=202 guifg=#f75d00
 highlight Identifier cterm=NONE ctermfg=75 guifg=#5fafff
-highlight String ctermfg=160 guifg=#d70000
+highlight String ctermfg=163 guifg=#d700af
 highlight Constant ctermfg=135 guifg=#af5fff
 
 highlight DiffAdd ctermfg=28 guifg=#008700
