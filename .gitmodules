@@ -40,3 +40,6 @@
 [submodule "vim/pack/haskell/start/haskell-vim"]
 	path = vim/pack/haskell/start/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim
+[submodule "vim/pack/xcode/start/vim-pbxproj"]
+	path = vim/pack/xcode/start/vim-pbxproj
+	url = https://github.com/cfdrake/vim-pbxproj
