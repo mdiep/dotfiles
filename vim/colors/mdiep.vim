@@ -44,3 +44,7 @@ highlight Underlined ctermfg=246 guifg=#949494
 " Markdown
 highlight! link markdownListMarker PreProc
 highlight! link markdownOrderedListMarker PreProc
+
+" HTML
+highlight htmlBold cterm=bold gui=bold
+highlight htmlItalic cterm=italic gui=italic
