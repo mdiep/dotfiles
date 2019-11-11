@@ -38,3 +38,9 @@ highlight! link Question String
 highlight! link Directory Type
 
 highlight! link Title Type
+
+highlight Underlined ctermfg=246 guifg=#949494
+
+" Markdown
+highlight! link markdownListMarker PreProc
+highlight! link markdownOrderedListMarker PreProc
