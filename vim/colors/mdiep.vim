@@ -16,6 +16,7 @@ highlight Error ctermbg=NONE guibg=NONE ctermfg=196 guifg=red
 highlight! link ErrorMsg Error
 
 highlight Comment ctermfg=172 guifg=#ee8e23
+highlight Title cterm=NONE gui=NONE
 
 highlight Statement cterm=NONE gui=NONE ctermfg=69 guifg=#4b7ff1
 highlight! link Structure Statement 
