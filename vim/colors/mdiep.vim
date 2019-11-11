@@ -23,6 +23,7 @@ highlight! link Structure Statement
 highlight! link Define Statement 
 
 highlight LineNr guifg=#666666 ctermfg=242
+highlight NonText guifg=#808080 ctermfg=244 cterm=NONE gui=NONE
 highlight PreProc ctermfg=246 guifg=#949494
 
 highlight Type cterm=italic gui=italic ctermfg=202 guifg=#f75d00
