@@ -34,3 +34,6 @@ highlight Constant ctermfg=135 guifg=#af5fff
 highlight DiffAdd ctermbg=NONE guibg=NONE ctermfg=34 guifg=#00af00
 highlight DiffChange ctermbg=NONE guibg=NONE ctermfg=220 guifg=#ffd700
 highlight DiffDelete cterm=NONE gui=NONE ctermbg=NONE guibg=NONE ctermfg=196 guifg=#ff0000
+
+highlight! link Question String
+highlight! link Directory Type
