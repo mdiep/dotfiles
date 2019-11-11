@@ -30,6 +30,6 @@ highlight Identifier cterm=NONE ctermfg=75 guifg=#5fafff
 highlight String ctermfg=163 guifg=#d700af
 highlight Constant ctermfg=135 guifg=#af5fff
 
-highlight DiffAdd ctermfg=28 guifg=#008700
-highlight DiffChange ctermfg=226 guifg=#ffff00
-highlight DiffDelete ctermfg=196 guifg=#ff0000
+highlight DiffAdd ctermbg=NONE guibg=NONE ctermfg=34 guifg=#00af00
+highlight DiffChange ctermbg=NONE guibg=NONE ctermfg=220 guifg=#ffd700
+highlight DiffDelete cterm=NONE gui=NONE ctermbg=NONE guibg=NONE ctermfg=196 guifg=#ff0000
