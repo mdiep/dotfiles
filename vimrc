@@ -3,7 +3,8 @@ set incsearch   " search as you type
 set ignorecase  " make search case-insensitive
 set smartcase   " ...unless you use an uppercase character
 
-set number " turn on line numbers
+set cursorline  " highlight the current line
+set number      " turn on line numbers
 
 set autoindent
 set expandtab       " insert spaces instead of tabs
