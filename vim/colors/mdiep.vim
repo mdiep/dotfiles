@@ -42,8 +42,8 @@ highlight! link Title Type
 highlight Underlined ctermfg=246 guifg=#949494
 
 " Menus
-highlight Pmenu ctermbg=236 guibg=#303030
-highlight PmenuSel ctermbg=53 guibg=#5f005f
+highlight Pmenu ctermbg=236 guibg=#303030 ctermfg=white
+highlight PmenuSel ctermbg=53 guibg=#5f005f ctermfg=white
 
 " Markdown
 highlight! link markdownListMarker PreProc
