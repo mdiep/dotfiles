@@ -43,3 +43,6 @@
 [submodule "vim/pack/xcode/start/vim-pbxproj"]
 	path = vim/pack/xcode/start/vim-pbxproj
 	url = https://github.com/cfdrake/vim-pbxproj
+[submodule "vim/pack/git/start/vim-fugitive"]
+	path = vim/pack/git/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
