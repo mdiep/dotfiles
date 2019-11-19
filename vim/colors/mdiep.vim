@@ -23,7 +23,7 @@ highlight! link Define Statement
 
 highlight LineNr guifg=#666666 ctermfg=242
 highlight CursorLine cterm=NONE gui=none ctermbg=235 guibg=#262626 ctermfg=NONE guifg=NONE
-highlight CursorLineNr cterm=NONE gui=NONE guifg=white ctermfg=246
+highlight CursorLineNr cterm=NONE gui=NONE guifg=white ctermfg=white
 highlight Visual cterm=NONE gui=NONE guibg=#3a3a3a guifg=NONE
 
 highlight NonText guifg=#808080 ctermfg=244 cterm=NONE gui=NONE
