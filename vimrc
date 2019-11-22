@@ -29,6 +29,10 @@ set noshowmode   " don't show the normal mode indicator
 set laststatus=2 " make room for lightline
 let g:lightline = { 'colorscheme': 'wombat' }
 
+" configure :grep to use ag
+set grepprg=ag\ --vimgrep\ $*
+set grepformat=%f:%l:%c:%m
+
 colo mdiep " Choose a color scheme
 syntax on
 hi illuminatedWord guibg=grey25 " Set the highlight color for vim-illuminate
