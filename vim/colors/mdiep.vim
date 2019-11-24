@@ -11,6 +11,7 @@ let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 
 highlight Normal guifg=grey90 ctermbg=234 guibg=#1e1e1e
+highlight Search gui=standout guibg=NONE guifg=NONE
 
 highlight Error ctermbg=NONE guibg=NONE ctermfg=196 guifg=red
 highlight! link ErrorMsg Error
