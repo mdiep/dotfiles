@@ -43,6 +43,7 @@ highlight! link Question String
 highlight! link Directory Type
 
 highlight! link Title Type
+highlight Todo cterm=underline gui=underline ctermbg=NONE guibg=NONE ctermfg=220 guifg=#ffd700
 
 highlight Underlined ctermfg=246 guifg=#949494
 
