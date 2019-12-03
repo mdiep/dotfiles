@@ -42,6 +42,8 @@ set guifont=Operator\ Mono\ SSm:h11
 let mapleader = ","
 
 " Keyboard shortcuts
+nnoremap <Home> gg
+nnoremap <End> G
 " Fuzzy Finder
 nnoremap <C-p> :<C-u>FZF<CR>
 " Run!
