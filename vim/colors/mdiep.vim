@@ -51,6 +51,10 @@ highlight Underlined ctermfg=246 guifg=#949494
 highlight Pmenu ctermbg=236 guibg=#303030 ctermfg=white
 highlight PmenuSel ctermbg=53 guibg=#5f005f ctermfg=white
 
+" Folds
+highlight Folded ctermbg=235 guibg=#262626
+highlight FoldColumn ctermbg=235 guibg=#262626
+
 " Markdown
 highlight! link markdownListMarker PreProc
 highlight! link markdownOrderedListMarker PreProc
