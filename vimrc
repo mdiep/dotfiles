@@ -33,6 +33,8 @@ let g:lightline = { 'colorscheme': 'wombat' }
 set grepprg=ag\ --vimgrep\ $*
 set grepformat=%f:%l:%c:%m
 
+filetype plugin on
+
 colo mdiep " Choose a color scheme
 syntax on
 hi illuminatedWord guibg=grey25 " Set the highlight color for vim-illuminate
