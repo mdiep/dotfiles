@@ -46,3 +46,6 @@
 [submodule "vim/pack/git/start/vim-fugitive"]
 	path = vim/pack/git/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/pack/dhall/start/dhall-vim"]
+	path = vim/pack/dhall/start/dhall-vim
+	url = https://github.com/vmchale/dhall-vim
