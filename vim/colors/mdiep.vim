@@ -6,6 +6,9 @@ endif
 set background=dark
 let g:colors_name="mdiep"
 
+" Vim test:     :so $VIMRUNTIME/syntax/hitest.vim
+" 256 colors:   http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
+
 " Escape codes to enable italics in the terminal
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
