@@ -21,7 +21,7 @@ highlight! link ErrorMsg Error
 
 highlight Comment ctermfg=172 guifg=#ee8e23
 
-highlight Statement cterm=NONE gui=NONE ctermfg=69 guifg=#4b7ff1
+highlight Statement cterm=NONE gui=NONE ctermfg=246 guifg=#949494
 highlight! link Structure Statement 
 highlight! link Define Statement 
 
@@ -31,7 +31,7 @@ highlight CursorLineNr cterm=NONE gui=NONE guifg=white ctermfg=white
 highlight Visual cterm=NONE gui=NONE ctermbg=237 guibg=#3a3a3a ctermfg=NONE guifg=NONE
 
 highlight NonText guifg=#808080 ctermfg=244 cterm=NONE gui=NONE
-highlight PreProc ctermfg=246 guifg=#949494
+highlight PreProc ctermfg=214 guifg=#ffaf00
 
 highlight Type cterm=italic gui=italic ctermfg=202 guifg=#f75d00
 highlight Identifier cterm=NONE ctermfg=75 guifg=#5fafff
@@ -48,7 +48,7 @@ highlight! link Directory Type
 highlight! link Title Type
 highlight Todo cterm=underline gui=underline ctermbg=NONE guibg=NONE ctermfg=220 guifg=#ffd700
 
-highlight Underlined ctermfg=246 guifg=#949494
+highlight Underlined ctermfg=248 guifg=#a8a8a8
 
 " Menus
 highlight Pmenu ctermbg=236 guibg=#303030 ctermfg=white
@@ -59,8 +59,8 @@ highlight Folded ctermbg=235 guibg=#262626
 highlight FoldColumn ctermbg=235 guibg=#262626
 
 " Markdown
-highlight! link markdownListMarker PreProc
-highlight! link markdownOrderedListMarker PreProc
+highlight! link markdownListMarker Statement
+highlight! link markdownOrderedListMarker Statement
 
 " HTML
 highlight htmlBold cterm=bold gui=bold
