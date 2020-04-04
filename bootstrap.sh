@@ -62,6 +62,15 @@ echo "  MacVim:"
 echo "    Check for updates automatically"
 defaults write -app MacVim SUEnableAutomaticChecks -bool true
 
+## NETNEWSWIRE
+echo "  NetNewsWire:"
+echo "    Check for updates automatically"
+defaults write -app NetNewsWire SUEnableAutomaticChecks -bool true
+echo "    Refresh every 10 minutes"
+defaults write -app NetNewsWire refreshInterval -int 2
+echo "    Open links in the background"
+defaults write -app NetNewsWire openInBrowserInBackground -bool true
+
 ## SAFARI
 echo "  Safari:"
 echo "    Don't auto-fill credit cards"
