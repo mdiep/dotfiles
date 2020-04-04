@@ -96,6 +96,24 @@ echo "  Terminal:"
 echo "    Close window if shell exits cleanly"
 defaults write -app Terminal shellExitAction -int 1
 
+## XCODE
+echo "  Xcode:"
+echo "    Don't show welcome window"
+defaults write com.apple.dt.Xcode XCShowWelcomeWindow -bool false
+echo "    Don't enclose selection in matching delimiters"
+defaults write com.apple.dt.Xcode DVTTextAutoEncloseSelectionInDelimiters -bool false
+echo "    Don't suggest completions while typing"
+defaults write com.apple.dt.Xcode DVTTextAutoSuggestCompletions -bool false
+echo "    Show code folding ribbon"
+defaults write com.apple.dt.Xcode DVTTextShowFoldingSidebar -bool true
+echo "    Show page guide at 100 characters"
+defaults write com.apple.dt.Xcode DVTTextPageGuideLocation -int 100
+defaults write com.apple.dt.Xcode DVTTextShowPageGuide -bool true
+echo "    Trim whitespace-only lines"
+defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool true
+echo "    Use mdiep theme"
+defaults write com.apple.dt.Xcode XCFontAndColorCurrentTheme -string "mdiep.xccolortheme"
+
 # DOTFILES
 echo "Installing dotfiles:"
 echo "  .ghci"
