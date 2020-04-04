@@ -50,6 +50,13 @@ defaults write com.apple.finder ShowStatusBar -bool true
 echo "    Default to Column View"
 defaults write com.apple.finder FXPreferredViewStyle -string clmv
 
+## IA WRITER
+echo "  iA Writer:"
+echo "    Use .md as the default extension"
+defaults write -app "iA Writer" "Document Path Extension" -string "md"
+echo "    80 characters per line"
+defaults write -app "iA Writer" "Editor Line Length Limit" -int 80
+
 ## MACVIM
 echo "  MacVim:"
 echo "    Check for updates automatically"
