@@ -46,6 +46,10 @@ let mapleader = ","
 " Keyboard shortcuts
 nnoremap <Home> gg
 nnoremap <End> G
+" Cmd-[ to go back
+nnoremap <D-[> <C-o>
+" Cmd-] to go forward
+nnoremap <D-]> <C-i>
 " Fuzzy Finder
 nnoremap <C-p> :<C-u>FZF<CR>
 " Run!
