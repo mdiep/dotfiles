@@ -144,6 +144,8 @@ echo "  fzf"
 brew install fzf &>/dev/null
 echo "  thefuck"
 brew install thefuck &>/dev/null
+echo "  tree"
+brew install tree &>/dev/null
 
 # TASKS
 echo "Remaining Tasks:"
