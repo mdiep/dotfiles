@@ -136,6 +136,12 @@ echo "Installing Xcode theme"
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 ln -Ffs $DOTFILES/xcode/mdiep.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/mdiep.xccolortheme
 
+# BIN
+echo "Creating ~/bin:"
+mkdir -p ~/bin
+echo "  mvim"
+ln -Ffs /Applications/MacVim.app/Contents/bin/mvim ~/bin/mvim
+
 # HOMEBREW
 echo "Installing Homebrew dependencies:"
 echo "  ag"
