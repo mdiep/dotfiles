@@ -148,6 +148,8 @@ echo "  ag"
 brew install the_silver_searcher &>/dev/null
 echo "  fzf"
 brew install fzf &>/dev/null
+echo "  node"
+brew install node &>/dev/null
 echo "  thefuck"
 brew install thefuck &>/dev/null
 echo "  tree"
