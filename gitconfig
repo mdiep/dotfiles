@@ -2,7 +2,7 @@
 	name = Matt Diephouse
 	email = matt@diephouse.com
 [core]
-	excludesfile = ~/.dotfiles/.gitignore
+	excludesfile = ~/.gitignore
 [push]
 	default = simple
 [filter "lfs"]
