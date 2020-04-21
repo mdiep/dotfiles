@@ -146,6 +146,8 @@ ln -Ffs /Applications/MacVim.app/Contents/bin/mvim ~/bin/mvim
 echo "Installing Homebrew dependencies:"
 echo "  ag"
 brew install the_silver_searcher &>/dev/null
+echo "  dhall"
+brew install dhall &>/dev/null
 echo "  elm"
 brew install elm &>/dev/null
 echo "  elm-format"
