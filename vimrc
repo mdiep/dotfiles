@@ -12,6 +12,8 @@ set tabstop=4       " display tabs as 4 columns
 set softtabstop=4   " insert 4 spaces when tab is pressed
 set shiftwidth=4    " indent by 4 columns
 
+set foldmethod=syntax " base code folding on syntax highlighting
+
 set noswapfile      " don't use swapfiles
 
 set signcolumn=yes  " always show the git gutter
