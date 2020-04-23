@@ -13,6 +13,8 @@ set softtabstop=4   " insert 4 spaces when tab is pressed
 set shiftwidth=4    " indent by 4 columns
 
 set foldmethod=syntax " base code folding on syntax highlighting
+" Open all folds when opening a file
+au BufWinEnter * normal zR 
 
 set noswapfile      " don't use swapfiles
 
