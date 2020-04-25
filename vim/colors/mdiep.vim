@@ -62,6 +62,10 @@ highlight FoldColumn ctermbg=235 guibg=#262626
 highlight! link markdownListMarker Statement
 highlight! link markdownOrderedListMarker Statement
 
+" Elm
+highlight elmModule ctermfg=140 guifg=#af87d7
+
+
 " HTML
 highlight htmlBold cterm=bold gui=bold
 highlight htmlItalic cterm=italic gui=italic
