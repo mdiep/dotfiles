@@ -29,6 +29,7 @@ highlight LineNr guifg=#666666 ctermfg=242
 highlight CursorLine cterm=NONE gui=none ctermbg=235 guibg=#262626 ctermfg=NONE guifg=NONE
 highlight CursorLineNr cterm=NONE gui=NONE guifg=white ctermfg=white
 highlight Visual cterm=NONE gui=NONE ctermbg=237 guibg=#3a3a3a ctermfg=NONE guifg=NONE
+highlight Folded ctermfg=244 guifg=#808080
 
 highlight NonText guifg=#808080 ctermfg=244 cterm=NONE gui=NONE
 highlight PreProc ctermfg=214 guifg=#ffaf00
