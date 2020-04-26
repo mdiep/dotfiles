@@ -14,7 +14,8 @@ syn match elmLineComment "--.*" contains=elmTodo,@spell
 syn region elmComment matchgroup=elmComment start="{-|\=" end="-}" contains=elmComment,elmTodo,@spell fold
 
 " Declarations
-syn match elmTypeAlias "^type alias [A-Z][0-9A-Za-z_ ]* \s*=" contains=elmType,elmTypeAliasKeyword,elmTypeAliasParameter skipwhite skipnl nextgroup=elmType
+syn match elmTypeAlias "^type alias [A-Z][0-9A-Za-z_ ]*=" contains=elmType,elmTypeAliasKeyword,elmTypeAliasParameter skipwhite skipnl nextgroup=elmType
+syn match elmTypeAliasStart "^type alias \%([A-Z][0-9A-Za-z_ ]*\)\=\%([0-9A-Za-z_ ]\)\@!=\@!" contains=elmType,elmTypeAliasKeyword,elmTypeAliasParameter 
 syn keyword elmTypeAliasKeyword type alias contained
 syn match elmTypeAnnotation "\<[a-z][0-9A-Za-z_]*\s*:" contains=elmOperator skipwhite skipnl nextgroup=elmType,elmTypeTuple
 syn match elmTypeDeclaration "^type \%(alias\>\)\@!\%([A-Z][0-9A-Za-z_ ]*\)\=" contains=elmType skipwhite skipnl nextgroup=elmConstructorFirst
