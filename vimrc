@@ -70,3 +70,7 @@ let g:netrw_dirhistmax = 0
 
 " Don't override the normal navigation commands
 let g:wordmotion_prefix = '<Leader>'
+
+" Format Dhall code on save with dhall-vim
+let g:dhall_format = 1
+
