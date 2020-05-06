@@ -42,7 +42,7 @@ colo mdiep " Choose a color scheme
 syntax on
 hi illuminatedWord guibg=grey25 " Set the highlight color for vim-illuminate
 
-set guifont=Operator\ Mono\ SSm:h11
+set guifont=Operator\ Mono\ SSm\ Book:h11
 
 let mapleader = ","
 
