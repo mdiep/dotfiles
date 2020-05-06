@@ -53,6 +53,16 @@ nnoremap <End> G
 nnoremap <D-[> <C-o>
 " Cmd-] to go forward
 nnoremap <D-]> <C-i>
+" Cmd-n to go to tab 9
+nnoremap <D-1> 1gt
+nnoremap <D-2> 2gt
+nnoremap <D-3> 3gt
+nnoremap <D-4> 4gt
+nnoremap <D-5> 5gt
+nnoremap <D-6> 6gt
+nnoremap <D-7> 7gt
+nnoremap <D-8> 8gt
+nnoremap <D-9> 9gt
 " Fuzzy Finder
 nnoremap <C-p> :<C-u>FZF<CR>
 " Run!
