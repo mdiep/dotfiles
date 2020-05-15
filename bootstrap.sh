@@ -161,6 +161,11 @@ brew install thefuck &>/dev/null
 echo "  tree"
 brew install tree &>/dev/null
 
+# NPM
+echo "Installing NPM dependencies:"
+echo "  elm-test"
+npm install -g elm-test &>/dev/null
+
 # TASKS
 echo "Remaining Tasks:"
 echo "  Install Operator font"
