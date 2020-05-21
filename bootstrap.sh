@@ -156,6 +156,8 @@ echo "  fzf"
 brew install fzf &>/dev/null
 echo "  node"
 brew install node &>/dev/null
+echo "  python"
+brew install python &>/dev/null
 echo "  thefuck"
 brew install thefuck &>/dev/null
 echo "  tree"
