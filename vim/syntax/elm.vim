@@ -21,7 +21,7 @@ syn match elmTypeAnnotation "\<[a-z][0-9A-Za-z_]*\s*:" contains=elmOperator skip
 syn match elmTypeDeclaration "^type \%(alias\>\)\@!\%([A-Z][0-9A-Za-z_ ]*\)\=" contains=elmType skipwhite skipnl nextgroup=elmConstructorFirst
 syn match elmConstructorFirst "=\_s*[A-Z(][0-9A-Za-z_ ()]*" contains=elmOperator,elmType,elmTypeTuple skipwhite skipnl nextgroup=elmConstructorRest
 syn match elmConstructorRest "|\_s*[A-Z(][0-9A-Za-z_ ()]*" contains=elmOperator,elmType,elmTypeTuple skipwhite skipnl nextgroup=elmConstructorRest
-syn match elmDefinition "\(\_^\s*\)\@<=\<[a-z][0-9A-Za-z_]*\>\(\(\s\+\<[a-z][0-9A-Za-z]*\>\)*\s*=\)\@="
+syn match elmDefinition "\(\_^\s*\)\@<=\<[a-z][0-9A-Za-z_]*\>\(\(\s\+\<[a-z][0-9A-Za-z]*\>\)*\s*==\@!\)\@="
 
 " Delimiters
 syn match elmDelimiter ","
