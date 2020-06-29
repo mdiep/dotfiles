@@ -162,6 +162,8 @@ echo "  thefuck"
 brew install thefuck &>/dev/null
 echo "  tree"
 brew install tree &>/dev/null
+echo "  wget"
+brew install wget &>/dev/null
 
 # NPM
 echo "Installing NPM dependencies:"
