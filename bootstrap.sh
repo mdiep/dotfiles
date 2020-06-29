@@ -96,6 +96,15 @@ echo "  Terminal:"
 echo "    Close window if shell exits cleanly"
 defaults write -app Terminal shellExitAction -int 1
 
+## TEXTEDIT
+echo "  TextEdit:"
+echo "    Use plain text for new documents"
+defaults write -app TextEdit RichText -bool false
+echo "    Use Operator font for plain text"
+defaults write -app TextEdit NSFixedPitchFont -string OperatorMonoSSm-Book
+defaults write -app TextEdit NSFixedPitchFontSize -int 11
+defaults write -app TextEdit NSFontPanelAttributes -string "1, 4"
+
 ## XCODE
 echo "  Xcode:"
 echo "    Don't show welcome window"
