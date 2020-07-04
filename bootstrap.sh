@@ -91,6 +91,11 @@ defaults write -app Safari ShowIconsInTabs -bool true
 echo "    Show status bar"
 defaults write -app Safari ShowOverlayStatusBar -bool true
 
+## SIMULATOR
+echo "  Simulator:"
+echo "    Don't show device bezels"
+defaults write com.apple.iphonesimulator ShowChrome -bool false
+
 ## TERMINAL
 echo "  Terminal:"
 echo "    Close window if shell exits cleanly"
