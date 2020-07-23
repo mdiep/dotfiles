@@ -43,6 +43,15 @@ defaults write com.apple.AppleMultitouchTrackpad -int 1
 echo "    Tap-to-click on the trackpad"
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+## AMPHETAMINE
+echo "  Amphetamine:"
+echo "    Don't show welcome window"
+defaults write -app Amphetamine "Show Welcome Window" -bool false
+echo "    Use coffee carafe icon"
+defaults write -app Amphetamine "Icon Style" -int 4
+echo "    Don't play sounds on start/sotp"
+defaults write -app Amphetamine "Enable Session State Sound" -bool false
+
 ## FINDER
 echo "  Finder:"
 echo "    Show status bar"
