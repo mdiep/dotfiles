@@ -49,3 +49,6 @@
 [submodule "vim/pack/dhall/start/dhall-vim"]
 	path = vim/pack/dhall/start/dhall-vim
 	url = https://github.com/vmchale/dhall-vim
+[submodule "vim/pack/rust/start/rust.vim"]
+	path = vim/pack/rust/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
