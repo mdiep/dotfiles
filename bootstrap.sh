@@ -136,6 +136,13 @@ echo "    Trim whitespace-only lines"
 defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool true
 echo "    Use mdiep theme"
 defaults write com.apple.dt.Xcode XCFontAndColorCurrentTheme -string "mdiep.xccolortheme"
+echo "    Navigation Style: Open in Place"
+defaults write com.apple.dt.Xcode IDEEditorNavigationStyle_DefaultsKey -string "IDEEditorNavigationStyle_OpenInPlace"
+echo "    Optional Navigation: Use Next Editor"
+defaults write com.apple.dt.Xcode IDEEditorCoordinatorTarget_Alternate -string "NextEditor"
+defaults write com.apple.dt.Xcode IDEEditorCoordinatorTarget_ShiftPlusAlternate -string "Ask"
+echo "    Double-Click Navigation: Use Separate Window Tab"
+defaults write com.apple.dt.Xcode IDEEditorCoordinatorTarget_DoubleClick -string "SeparateTab"
 
 # DOTFILES
 echo "Installing dotfiles:"
