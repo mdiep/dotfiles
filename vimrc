@@ -84,3 +84,6 @@ let g:wordmotion_prefix = '<Leader>'
 " Format Dhall code on save with dhall-vim
 let g:dhall_format = 1
 
+" Format Rust code on save with rust.vim
+let g:rustfmt_autosave = 1 
+
