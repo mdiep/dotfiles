@@ -52,3 +52,6 @@
 [submodule "vim/pack/rust/start/rust.vim"]
 	path = vim/pack/rust/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule "vim/pack/haskell/start/vim-stylish-haskell"]
+	path = vim/pack/haskell/start/vim-stylish-haskell
+	url = https://github.com/nbouscal/vim-stylish-haskell
