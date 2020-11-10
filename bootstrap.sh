@@ -58,6 +58,8 @@ echo "    Show status bar"
 defaults write com.apple.finder ShowStatusBar -bool true
 echo "    Default to Column View"
 defaults write com.apple.finder FXPreferredViewStyle -string clmv
+echo "    Remove items from the Trash after 30 days"
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
 
 ## IA WRITER
 echo "  iA Writer:"
