@@ -178,6 +178,8 @@ ln -Ffs /Applications/MacVim.app/Contents/bin/mvim ~/bin/mvim
 echo "Installing Homebrew dependencies:"
 echo "  ag"
 brew install the_silver_searcher &>/dev/null
+echo "  cabal"
+brew install cabal-install &>/dev/null
 echo "  dhall"
 brew install dhall &>/dev/null
 echo "  elm"
@@ -196,6 +198,10 @@ echo "  tree"
 brew install tree &>/dev/null
 echo "  wget"
 brew install wget &>/dev/null
+
+# CABAL
+echo "Updating cabal"
+cabal update &>/dev/null
 
 # NPM
 echo "Installing NPM dependencies:"
