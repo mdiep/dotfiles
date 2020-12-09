@@ -121,6 +121,17 @@ defaults write -app TextEdit NSFixedPitchFont -string OperatorMonoSSm-Book
 defaults write -app TextEdit NSFixedPitchFontSize -int 11
 defaults write -app TextEdit NSFontPanelAttributes -string "1, 4"
 
+TWEETBOT_PLIST=~/Library/Group\ Containers/9JTH7AWHE6.com.tapbots.Tweetbot3Mac/Library/Preferences/9JTH7AWHE6.com.tapbots.Tweetbot3Mac.plist
+echo "  Tweetbot:"
+echo "    Turn off sound"
+defaults write "$TWEETBOT_PLIST" soundType -int 2
+echo "    Use small thumbnails"
+defaults write "$TWEETBOT_PLIST" statusViewImageType -int 1
+echo "    Turn off round avatars"
+defaults write "$TWEETBOT_PLIST" roundAvatars -bool false
+echo "    Turn on badges"
+defaults write "$TWEETBOT_PLIST" badgesEnabled -bool true
+
 ## XCODE
 echo "  Xcode:"
 echo "    Don't show welcome window"
