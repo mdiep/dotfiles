@@ -200,8 +200,11 @@ echo "  wget"
 brew install wget &>/dev/null
 
 # CABAL
-echo "Updating cabal"
+echo "Installing Cabal dependencies:"
+echo "  Updating cabal"
 cabal update &>/dev/null
+echo "  stylish-haskell"
+cabal install stylish-haskell &>/dev/null
 
 # NPM
 echo "Installing NPM dependencies:"
