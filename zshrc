@@ -18,7 +18,7 @@ autoload -U zmv
 alias "zmv"="noglob zmv -W"
 
 
-path=(~/bin $path $HOME/.cabal/bin $HOME/.cargo/bin $HOME/.local/bin)
+path=(~/bin $path $HOME/.cabal/bin $HOME/.cargo/bin $HOME/.local/bin $HOME/.ghcup/bin /opt/homebrew/bin/)
 
 # Configure FZF (fuzzy finder) to generate the list of files with `ag`
 # This filters out ignored files and .git files. Manually exclude Carthage dependendies.
