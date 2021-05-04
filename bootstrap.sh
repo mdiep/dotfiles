@@ -70,8 +70,9 @@ defaults write -app "iA Writer" "Editor Line Length Limit" -int 80
 
 ## MACVIM
 echo "  MacVim:"
-echo "    Check for updates automatically"
-defaults write -app MacVim SUEnableAutomaticChecks -bool true
+echo "    Check for and install updates automatically"
+defaults write -app MacVim SUCheckAtStartup -bool true
+defaults write -app MacVim SUAutomaticallyUpdate -bool true
 
 ## NETNEWSWIRE
 echo "  NetNewsWire:"
