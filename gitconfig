@@ -3,6 +3,8 @@
 	email = matt@diephouse.com
 [core]
 	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main
 [push]
 	default = simple
 [filter "lfs"]
