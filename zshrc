@@ -22,7 +22,7 @@ path=(~/bin $path $HOME/.cabal/bin $HOME/.cargo/bin $HOME/.local/bin $HOME/.ghcu
 
 # Configure FZF (fuzzy finder) to generate the list of files with `ag`
 # This filters out ignored files and .git files. Manually exclude Carthage dependendies.
-export FZF_DEFAULT_COMMAND='ag -g . --ignore Carthage/Checkouts --ignore Carthage/Build'
+export FZF_DEFAULT_COMMAND='ag -g . --ignore Carthage/Checkouts --ignore Carthage/Build --ignore .git/ --hidden'
 
 # Add alias for `thefuck`, a tool to rerun the last command but fix an issue.
 # (e.g. adding `-p` to `mkdir` if you forgot it.)
