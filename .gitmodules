@@ -55,3 +55,6 @@
 [submodule "vim/pack/haskell/start/vim-stylish-haskell"]
 	path = vim/pack/haskell/start/vim-stylish-haskell
 	url = https://github.com/nbouscal/vim-stylish-haskell
+[submodule "vim/pack/futhark/start/futhark-vim"]
+	path = vim/pack/futhark/start/futhark-vim
+	url = https://github.com/BeneCollyridam/futhark-vim
