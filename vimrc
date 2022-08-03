@@ -68,12 +68,9 @@ nnoremap <C-p> :<C-u>FZF<CR>
 " Run!
 nnoremap <leader>r :make<CR>
 
-" Syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-" Show errors from all checkers
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_swift_checkers = ['swiftlint']
+" ALE
+" Disable LSP through ALE because coc.nvim provides it
+let g:ale_disable_lsp = 1
 
 " Don't track history in ~/.vim/.netrwhist
 let g:netrw_dirhistmax = 0

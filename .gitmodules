@@ -7,9 +7,6 @@
 [submodule ".vim/pack/kotlin/start/kotlin-vim"]
 	path = vim/pack/kotlin/start/kotlin-vim
 	url = https://github.com/udalov/kotlin-vim
-[submodule ".vim/pack/ui/start/syntastic"]
-	path = vim/pack/ui/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic
 [submodule ".vim/pack/js/start/vim-javascript"]
 	path = vim/pack/javascript/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -58,3 +55,6 @@
 [submodule "vim/pack/futhark/start/futhark-vim"]
 	path = vim/pack/futhark/start/futhark-vim
 	url = https://github.com/BeneCollyridam/futhark-vim
+[submodule "vim/pack/ui/start/ale"]
+	path = vim/pack/ui/start/ale
+	url = https://github.com/dense-analysis/ale
