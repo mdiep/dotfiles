@@ -73,6 +73,8 @@ echo "  MacVim:"
 echo "    Check for and install updates automatically"
 defaults write -app MacVim SUCheckAtStartup -bool true
 defaults write -app MacVim SUAutomaticallyUpdate -bool true
+echo "    Don't open untitled windows on launch or activation"
+defaults write -app MacVim MMUntitledWindow -int 0
 
 ## NETNEWSWIRE
 echo "  NetNewsWire:"
