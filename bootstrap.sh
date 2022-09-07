@@ -51,6 +51,11 @@ if ! defaults read -app "iA Writer" &> /dev/null; then
         mas install 775737590 >/dev/null
     fi
 fi
+if ! defaults read -app "Slack" &> /dev/null; then
+    if ask "  Install Slack?"; then
+        mas install 803453959 >/dev/null
+    fi
+fi
 
 # DEFAULT
 echo "Setting defaults:"
