@@ -1,8 +1,20 @@
 #!/usr/bin/env bash
 
+set -e
+
 DOTFILES=$(cd $(dirname $0); pwd)
 
-set -e
+# Ask a YES/NO question
+ask() {
+    while true; do
+        read -p "$1 [y/n] " yn
+	case $yn in
+	  [yY] ) return 0;;
+	  [nN] ) return 1;;
+ 	  *    ) continue;;
+	esac
+    done
+}
 
 if [ $SHELL != "/bin/zsh" ]; then
     echo "Change to zsh"
@@ -21,6 +33,23 @@ if ! brew help &> /dev/null; then
     echo "Install Homebrew"
     open -g https://brew.sh
     read
+fi
+
+
+# Apps
+echo "Installing apps:"
+echo "  Installing mas (Mac App Store CLI tool)"
+brew install mas &>/dev/null
+
+if ! defaults read -app Amphetamine &> /dev/null; then
+    if ask "  Install Amphetamine?"; then
+	mas install 937984704 >/dev/null
+    fi
+fi
+if ! defaults read -app "iA Writer" &> /dev/null; then
+    if ask "  Install iA Writer?"; then
+        mas install 775737590 >/dev/null
+    fi
 fi
 
 # DEFAULT
@@ -44,13 +73,15 @@ echo "    Tap-to-click on the trackpad"
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 ## AMPHETAMINE
-echo "  Amphetamine:"
-echo "    Don't show welcome window"
-defaults write -app Amphetamine "Show Welcome Window" -bool false
-echo "    Use coffee carafe icon"
-defaults write -app Amphetamine "Icon Style" -int 4
-echo "    Don't play sounds on start/sotp"
-defaults write -app Amphetamine "Enable Session State Sound" -bool false
+if defaults read -app Amphetamine &> /dev/null; then
+    echo "  Amphetamine:"
+    echo "    Don't show welcome window"
+    defaults write -app Amphetamine "Show Welcome Window" -bool false
+    echo "    Use coffee carafe icon"
+    defaults write -app Amphetamine "Icon Style" -int 4
+    echo "    Don't play sounds on start/sotp"
+    defaults write -app Amphetamine "Enable Session State Sound" -bool false
+fi
 
 ## FINDER
 echo "  Finder:"
@@ -62,11 +93,13 @@ echo "    Remove items from the Trash after 30 days"
 defaults write com.apple.finder FXRemoveOldTrashItems -bool true
 
 ## IA WRITER
-echo "  iA Writer:"
-echo "    Use .md as the default extension"
-defaults write -app "iA Writer" "Document Path Extension" -string "md"
-echo "    80 characters per line"
-defaults write -app "iA Writer" "Editor Line Length Limit" -int 80
+if ! defaults read -app "iA Writer" &> /dev/null; then
+    echo "  iA Writer:"
+    echo "    Use .md as the default extension"
+    defaults write -app "iA Writer" "Document Path Extension" -string "md"
+    echo "    80 characters per line"
+    defaults write -app "iA Writer" "Editor Line Length Limit" -int 80
+fi
 
 ## MACVIM
 echo "  MacVim:"
@@ -77,13 +110,15 @@ echo "    Don't open untitled windows on launch or activation"
 defaults write -app MacVim MMUntitledWindow -int 0
 
 ## NETNEWSWIRE
-echo "  NetNewsWire:"
-echo "    Check for updates automatically"
-defaults write -app NetNewsWire SUEnableAutomaticChecks -bool true
-echo "    Refresh every 10 minutes"
-defaults write -app NetNewsWire refreshInterval -int 2
-echo "    Open links in the background"
-defaults write -app NetNewsWire openInBrowserInBackground -bool true
+if defaults read -app "NetNewsWire" &> /dev/null; then
+    echo "  NetNewsWire:"
+    echo "    Check for updates automatically"
+    defaults write -app NetNewsWire SUEnableAutomaticChecks -bool true
+    echo "    Refresh every 10 minutes"
+    defaults write -app NetNewsWire refreshInterval -int 2
+    echo "    Open links in the background"
+    defaults write -app NetNewsWire openInBrowserInBackground -bool true
+fi
 
 ## SAFARI
 echo "  Safari:"
