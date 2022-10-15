@@ -29,6 +29,23 @@ if ! defaults read -app Safari &> /dev/null; then
     exit 1
 fi
 
+# DOTFILES
+echo "Installing dotfiles:"
+echo "  .ghci"
+ln -Ffs $DOTFILES/ghci ~/.ghci
+echo "  .gitconfig"
+ln -Ffs $DOTFILES/gitconfig ~/.gitconfig
+echo "  .gitignore"
+ln -Ffs $DOTFILES/gitignore ~/.gitignore
+echo "  .vim"
+ln -hFfs $DOTFILES/vim ~/.vim
+echo "  .vimrc"
+ln -Ffs $DOTFILES/vimrc ~/.vimrc
+echo "  .zshenv"
+ln -Ffs $DOTFILES/zshenv ~/.zshenv
+echo "  .zshrc"
+ln -Ffs $DOTFILES/zshrc ~/.zshrc
+
 if ! brew help &> /dev/null; then
     echo "Install Homebrew"
     open -g https://brew.sh
@@ -201,23 +218,6 @@ echo "    Double-Click Navigation: Use Separate Window Tab"
 defaults write com.apple.dt.Xcode IDEEditorCoordinatorTarget_DoubleClick -string "SeparateTab"
 echo "    Prefer spcaes"
 defaults write com.apple.dt.Xcode DVTTextIndentUsingTabs -bool false
-
-# DOTFILES
-echo "Installing dotfiles:"
-echo "  .ghci"
-ln -Ffs $DOTFILES/ghci ~/.ghci
-echo "  .gitconfig"
-ln -Ffs $DOTFILES/gitconfig ~/.gitconfig
-echo "  .gitignore"
-ln -Ffs $DOTFILES/gitignore ~/.gitignore
-echo "  .vim"
-ln -hFfs $DOTFILES/vim ~/.vim
-echo "  .vimrc"
-ln -Ffs $DOTFILES/vimrc ~/.vimrc
-echo "  .zshenv"
-ln -Ffs $DOTFILES/zshenv ~/.zshenv
-echo "  .zshrc"
-ln -Ffs $DOTFILES/zshrc ~/.zshrc
 
 # XCODE
 echo "Installing Xcode theme"
