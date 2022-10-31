@@ -15,7 +15,7 @@ XCTEST_FAILURE = re.compile(r"""
         (.+)
     "\)
     \Z
-""", re.VERBOSE | re.IGNORECASE | re.MULTILINE)
+""", re.VERBOSE | re.IGNORECASE | re.DOTALL)
 
 def find_actual_and_expected(input: str) -> Optional[tuple[str, str]]:
     match = XCTEST_FAILURE.search(input)
