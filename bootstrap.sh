@@ -115,7 +115,7 @@ echo "    Remove items from the Trash after 30 days"
 defaults write com.apple.finder FXRemoveOldTrashItems -bool true
 
 ## IA WRITER
-if ! defaults read -app "iA Writer" &> /dev/null; then
+if defaults read -app "iA Writer" &> /dev/null; then
     echo "  iA Writer:"
     echo "    Use .md as the default extension"
     defaults write -app "iA Writer" "Document Path Extension" -string "md"
