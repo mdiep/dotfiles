@@ -72,6 +72,9 @@ nnoremap <leader>r :make<CR>
 " Disable LSP through ALE because coc.nvim provides it
 let g:ale_disable_lsp = 1
 
+" Enable syntax highlighting of fenced code blocks in markdown
+let g:markdown_fenced_languages = ['css', 'elm', 'haskell', 'swift', 'objc']
+
 " Don't track history in ~/.vim/.netrwhist
 let g:netrw_dirhistmax = 0
 
