@@ -196,6 +196,8 @@ defaults write "$TWEETBOT_PLIST" badgesEnabled -bool true
 echo "  Xcode:"
 echo "    Don't show welcome window"
 defaults write com.apple.dt.Xcode XCShowWelcomeWindow -bool false
+echo "    Show all file extensions"
+defaults write com.apple.dt.Xcode IDEFileExtensionDisplayMode -int 1
 echo "    Don't enclose selection in matching delimiters"
 defaults write com.apple.dt.Xcode DVTTextAutoEncloseSelectionInDelimiters -bool false
 echo "    Don't suggest completions while typing"
