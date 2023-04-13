@@ -27,3 +27,5 @@ export FZF_DEFAULT_COMMAND='ag -g . --ignore Carthage/Checkouts --ignore Carthag
 # Add alias for `thefuck`, a tool to rerun the last command but fix an issue.
 # (e.g. adding `-p` to `mkdir` if you forgot it.)
 eval $(thefuck --alias gah)
+
+eval "$(atuin init zsh)"
