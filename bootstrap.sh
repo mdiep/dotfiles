@@ -236,6 +236,8 @@ ln -Ffs /Applications/MacVim.app/Contents/bin/mvim ~/bin/mvim
 echo "Installing Homebrew dependencies:"
 echo "  ag"
 brew install the_silver_searcher &>/dev/null
+echo "  atuin"
+brew install atuin &>/dev/null
 echo "  cabal"
 brew install cabal-install &>/dev/null
 echo "  dhall"
