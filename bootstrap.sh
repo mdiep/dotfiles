@@ -171,6 +171,8 @@ defaults write com.apple.iphonesimulator ShowChrome -bool false
 echo "  Terminal:"
 echo "    Close window if shell exits cleanly"
 defaults write -app Terminal shellExitAction -int 1
+echo "    Always show tab bar"
+defaults write -app Terminal "NSWindowTabbingShoudShowTabBarKey-TTWindow-TTWindowController-TTWindowController-VT-FS" -bool YES
 
 ## TEXTEDIT
 echo "  TextEdit:"
