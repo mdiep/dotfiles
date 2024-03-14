@@ -101,6 +101,8 @@ if defaults read -app Amphetamine &> /dev/null; then
     defaults write -app Amphetamine "Show Welcome Window" -bool false
     echo "    Use coffee carafe icon"
     defaults write -app Amphetamine "Icon Style" -int 4
+    echo "    Use low-opacity icon when inactive"
+    defaults write -app Amphetamine "Lower Icon Opacity" -bool true
     echo "    Don't play sounds on start/sotp"
     defaults write -app Amphetamine "Enable Session State Sound" -bool false
 fi
