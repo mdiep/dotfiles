@@ -321,7 +321,7 @@ case "$1" in
     "")
         dotfiles
         apps
-        defaults
+        set_defaults
         install
         tasks
         ;;
