@@ -93,6 +93,8 @@ echo "    4 fingers to Mission Control"
 defaults write com.apple.AppleMultitouchTrackpad -int 1
 echo "    Tap-to-click on the trackpad"
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+echo "    Tile by dragging windows to screen edges"
+defaults write com.apple.WindowManager EnableTilingByEdgeDrag -bool false
 
 ## AMPHETAMINE
 if defaults read -app Amphetamine &> /dev/null; then
