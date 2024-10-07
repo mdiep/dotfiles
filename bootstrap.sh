@@ -229,7 +229,7 @@ set_defaults() {
     defaults write com.apple.dt.Xcode IDEEditorCoordinatorTarget_ShiftPlusAlternate -string "Ask"
     echo "    Double-Click Navigation: Use Separate Window Tab"
     defaults write com.apple.dt.Xcode IDEEditorCoordinatorTarget_DoubleClick -string "SeparateTab"
-    echo "    Prefer spcaes"
+    echo "    Prefer spaces"
     defaults write com.apple.dt.Xcode DVTTextIndentUsingTabs -bool false
 }
 
