@@ -100,6 +100,8 @@ set_defaults() {
     defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
     echo "    Tile by dragging windows to screen edges"
     defaults write com.apple.WindowManager EnableTilingByEdgeDrag -bool false
+    echo "    Tile by dragging windows to menu bar"
+    defaults write com.apple.WindowManager EnableTopTilingByEdgeDrag -bool False
 
     ## AMPHETAMINE
     if defaults read -app Amphetamine &> /dev/null; then
